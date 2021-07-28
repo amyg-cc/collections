@@ -5,7 +5,10 @@
 
 avengers = {
     "iron_man": {
-        "name": "Tony Stark",
+        "personal_details": {
+            "name": "Tony Stark",
+            "age": 49
+        },
         "attacks": {
             "punch": 10,
             "kick": 1000
@@ -13,12 +16,16 @@ avengers = {
     },
 
     "hulk": {
-        "name": "Bruce Banner",
+        "personal_details": {
+            "name": "Bruce Banner",
+            "age": 40
+        },
         "attacks": {
             "smash": 1000,
             "roll": 500
         }
     }
-
 }
-print(avengers["hulk"]["attacks"]["smash"])
+print("Hulk Smash is worth " + str(avengers["hulk"]["attacks"]["smash"]) + " points.")
+print("Iron Man is " + str(avengers["iron_man"]["personal_details"]["age"]) + " years old.")
+
